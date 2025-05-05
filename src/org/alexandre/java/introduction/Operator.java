@@ -3,7 +3,7 @@ package org.alexandre.java.introduction;
 /**
  * Verifica condições para votação no Brasil baseado em idade e título de eleitor.
  */
-public class Operadores {
+public class Operator {
     public static void main(String[] args) {
         int age = 16;
         boolean hasVoterID = true;

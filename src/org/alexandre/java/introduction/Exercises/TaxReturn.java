@@ -2,7 +2,7 @@ package org.alexandre.java.introduction.Exercises;
 
 public class TaxReturn {
     public static void main(String[] args) {
-        double salary = 1518;
+        double salary = 3000;
         double firstTaxRate = 7.5 / 100;
         double secondTaxRate = 15.0 / 100;
         double thirdTaxRate = 22.5 / 100;
@@ -13,7 +13,7 @@ public class TaxReturn {
         if (salary <= 2428.80) {
             System.out.println("O salário de: "+ salary + " esta livre de imposto!");
 
-        } else if (salary >= 2428.80 && salary <= 2826.65) {
+        } else if (salary >= 2428.81 && salary <= 2826.65) {
             taxAmount = salary * firstTaxRate;
             netSalary = salary - taxAmount;
             System.out.println(
