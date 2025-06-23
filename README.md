@@ -1,18 +1,18 @@
-## Getting Started
+Introduction
+I am currently learning the Java programming language. This document serves as a guide to understand the basic organization of a Java project, facilitating code development and maintenance.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Project Structure
+The project is organized into three main folders:
 
-## Folder Structure
+src: contains the source files written in Java.
 
-The workspace contains two folders by default, where:
+lib: stores the external libraries and dependencies required for the project.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+bin: the location where the compiled files (bytecode) are generated after the compilation process.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+This organization contributes to a clearer and more organized workflow, allowing separation between source code, dependencies, and compiled artifacts.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+If necessary, the folder structure can be customized according to the specific needs of the project.
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Dependency Management
+Proper dependency management is essential to ensure that all external libraries used are available and up to date. This facilitates the building, execution, and maintenance of the project.
