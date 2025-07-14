@@ -7,6 +7,7 @@ public class Serie {
     private String type;
     private int episode;
     private String genre;
+    private String studio;
 
     public Serie(String name, String type, int episode, String genre){
         this.name = name;
@@ -15,12 +16,17 @@ public class Serie {
         this.genre = genre;
     }
 
+    public Serie(String name, String type, int episode, String genre, String studio){
+        this(name, type, episode, genre);
+        this.studio = studio;
+    }
 
     public void print(){
         System.out.println(this.name);
         System.out.println(this.type);
         System.out.println(this.episode);
         System.out.println(this.genre);
+        System.out.println(this.studio);
     }
 
     public void setName (String name){
