@@ -5,8 +5,10 @@ import org.alexandre.javacore.introductionmethods.domain.Person;
 public class PersonTest {
     public static void main(String[] args) {
         Person person = new Person();
-        person.setName("Alexandre");
+        person.setName("admin");
         person.setAge(18);
-        person.print();
+
+        System.out.println(person.getName());
+        System.out.println(person.getAge());
     }
 }

@@ -9,9 +9,15 @@ public class Person {
         System.out.println(this.age);
     }
 
-    public void setName(String name){
+    public void setName(String name) {
+        if ("admin".equalsIgnoreCase(name)) {
+            System.out.println("The name \"" + name + "\" is not allowed.");
+            return;
+        }
+
         this.name = name;
     }
+
 
     public void setAge(int age){
         if (age < 0 ){
