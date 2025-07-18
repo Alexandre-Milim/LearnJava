@@ -22,6 +22,11 @@ public class Car {
 
     public void setMaxSpeed(double maxSpeed) {
         this.maxSpeed = maxSpeed;
+        if (maxSpeed > 400) {
+            System.out.println("This car is extremely fast!");
+        } else {
+            System.out.println("This car has a regular speed.");
+        }
     }
 
     public double getMaxSpeed() {
