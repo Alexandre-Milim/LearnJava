@@ -3,7 +3,13 @@ package org.alexandre.javacore.staticmodifiers.domain;
 public class Car {
     private String name;
     private double maxSpeed;
-    private double speedLimit = 250;
+    private double speedLimit;
+
+    public Car(String name, double maxSpeed, double speedLimit){
+        this.name = name;
+        this.maxSpeed = maxSpeed;
+        this.speedLimit = speedLimit;
+    }
 
     public void print() {
         System.out.println("--------");
@@ -12,21 +18,14 @@ public class Car {
         System.out.println("Speed Limit: " + this.speedLimit);
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
-    }
-
     public void setMaxSpeed(double maxSpeed) {
         this.maxSpeed = maxSpeed;
         if (maxSpeed > 400) {
             System.out.println("This car is extremely fast!");
-        } else {
-            System.out.println("This car has a regular speed.");
+        } else if (maxSpeed >= 350) {
+            System.out.println("Close to the speed limit, be careful!");
         }
+        // Se for menor que 350, nenhuma mensagem será exibida
     }
 
     public double getMaxSpeed() {
