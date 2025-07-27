@@ -1,6 +1,6 @@
 package org.alexandre.javacore.association.domain;
 
-public class Studant {
+public class Student {
     private String name;
     private School school;
 
@@ -11,7 +11,7 @@ public class Studant {
         }
     }
 
-    public Studant(String name){
+    public Student(String name){
            this.name = name;
     }
 

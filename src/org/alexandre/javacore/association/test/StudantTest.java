@@ -1,16 +1,16 @@
 package org.alexandre.javacore.association.test;
 
-import org.alexandre.javacore.association.domain.Studant;
+import org.alexandre.javacore.association.domain.Student;
 
 public class StudantTest {
     public static void main(String[] args) {
-        Studant studant0 = new Studant("Alexandre");
-        Studant studant1 = new Studant("Gabryel");
-        Studant studant2 = new Studant("Milim");
+        Student studant0 = new Student("Alexandre");
+        Student studant1 = new Student("Gabryel");
+        Student studant2 = new Student("Milim");
 
-        Studant[] students = {studant0,studant1,studant2};
+        Student[] students = {studant0,studant1,studant2};
 
-        for (Studant studant : students ){
+        for (Student studant : students ){
             studant.print();
         }
     }
