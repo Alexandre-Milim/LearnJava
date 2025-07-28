@@ -1,13 +1,17 @@
 package org.alexandre.javacore.execercise.domain;
 
 public class Local {
-    private String adress;
+    private String address;
 
-    public String getAdress() {
-        return adress;
+    public Local(String address) {
+        this.address = address;
     }
 
-    public void setAdress(String adress) {
-        this.adress = adress;
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 }
