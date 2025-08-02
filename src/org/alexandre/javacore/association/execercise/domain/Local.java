@@ -1,4 +1,4 @@
-package org.alexandre.javacore.execercise.domain;
+package org.alexandre.javacore.association.execercise.domain;
 
 public class Local {
     private String address;

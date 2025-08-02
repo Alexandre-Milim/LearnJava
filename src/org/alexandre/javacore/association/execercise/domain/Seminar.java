@@ -1,17 +1,17 @@
-package org.alexandre.javacore.execercise.domain;
+package org.alexandre.javacore.association.execercise.domain;
 
 public class Seminar {
     private String title;
-    private Student student;
+    private Student[] student;
     private Local local;
 
-    public Seminar(String title, Student student, Local local) {
+    public Seminar(String title, Student[] student, Local local) {
         this.title = title;
         this.student = student;
         this.local = local;
     }
 
-    public Seminar(String title, Student student) {
+    public Seminar(String title, Student[] student) {
         this.title = title;
         this.student = student;
     }
@@ -28,11 +28,11 @@ public class Seminar {
         this.title = title;
     }
 
-    public Student getStudent() {
+    public Student[] getStudent() {
         return student;
     }
 
-    public void setStudent(Student student) {
+    public void setStudent(Student[] student) {
         this.student = student;
     }
 

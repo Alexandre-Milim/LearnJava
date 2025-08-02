@@ -1,14 +1,13 @@
-package org.alexandre.javacore.execercise.domain;
+package org.alexandre.javacore.association.execercise.domain;
 
 public class Student {
     private String name;
     private int age;
     private Seminar seminar;
 
-    public Student(String name, int age, Seminar seminar) {
+    public Student(String name, int age) {
         this.name = name;
         this.age = age;
-        this.seminar = seminar;
     }
 
     public String getName() {
