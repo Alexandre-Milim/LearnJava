@@ -11,10 +11,6 @@ public class Seminar {
         this.local = local;
     }
 
-    public Seminar(String title, Student[] student) {
-        this.title = title;
-        this.student = student;
-    }
 
     public Seminar(String title) {
         this.title = title;

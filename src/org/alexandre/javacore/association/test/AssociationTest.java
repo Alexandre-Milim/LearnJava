@@ -7,15 +7,15 @@ import org.alexandre.javacore.association.execercise.domain.Teacher;
 
 public class AssociationTest {
     public static void main(String[] args) {
-        Local local = new Local("Rua dos Ingleses");
+        Local local = new Local("Street of the English");
         Student student = new Student("Alexandre", 18);
         Teacher teacher = new Teacher("Igor", "Front-End");
         Student[] studentsForSeminar = {student};
         Seminar seminar = new Seminar("Learn Java", studentsForSeminar, local);
 
-        Seminar[] seminarDisponiveis = {seminar};
+        Seminar[] availableSeminars = {seminar};
 
-        teacher.setSeminars(seminarDisponiveis);
+        teacher.setSeminars(availableSeminars);
 
         teacher.print();
     }
